@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+/* helper classes */
+.links-style {
+  text-decoration: none;
+  color: black;
+}
+.set-grey {
+  color: grey;
+}
+.set-white {
+  color: white;
+}
+.row-wise {
+  display: flex;
+  flex-direction: row;
+}
+header,
+.page1-text-content,
+.page2,
+.page4,
+.footer-text {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.checkmark-logo {
+  margin-right: 3px;
+}
+
+.free-trial-btn1 {
+  background: rgb(114, 20, 201);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 100px 10px 100px;
+  margin-bottom: 10px;
+}
+.p-color-text {
+  color: rgb(114, 20, 201);
+}
+.page1,
+header,
+footer {
+  background: rgba(247, 239, 228, 0.712);
+}
+
+/* end helper classes */
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.rating {
+  display: none;
+}
+.first-heading {
+  width: 80%;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+.example-link {
+  display: flex;
+  justify-content: center;
+}
+.page3 {
+  background-color: rgb(114, 20, 201);
+  border-radius: 10px;
+  margin: 60px 30px 50px 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 500px;
+}
+.page3-white-heading {
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+.page3-white-para {
+  margin-top: 6px;
+}
+.free-trial-btn2 {
+  background: white;
+  color: rgb(114, 20, 201);
+  border-radius: 5px;
+  padding: 10px 70px 10px 70px;
+  margin-left: 20px;
+}
+.page3-img-divv {
+  height: 251px;
+  width: 200px;
+  margin: 20px 40px 0px 40px;
+}
+.page3-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page4-content-box {
+  border: solid grey 0.5px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.box-top-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+.name-text {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  padding-left: 10px;
+}
+.money-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+.portfolio-btn {
+  background: white;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.navbar {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-content {
+  display: none;
+  width: 100%;
+  margin-top: 30px;
+}
+.nav-content a {
+  padding: 0px 10px;
+}
+
+@media (min-width: 992px) {
+  img[alt="hamburger-icon"] {
+    display: none;
+  }
+  .nav-content {
+    display: block;
+    width: auto;
+    margin-top: 0px;
+  }
+}

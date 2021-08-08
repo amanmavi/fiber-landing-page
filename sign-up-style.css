@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  padding-left: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.row-wise {
+  display: flex;
+  flex-direction: row;
+}
+.column-wise {
+  display: flex;
+  flex-direction: column;
+}
+.check-box {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+.checkbox-field {
+  height: 80px;
+}
+.checkbox-text {
+  width: 300px;
+}
+.create-account-btn {
+  background: rgb(114, 20, 201);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 100px 15px 100px;
+}
+
+.input-box {
+  color: grey;
+  padding: 15px 150px 15px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sign-in-link {
+  color: rgb(114, 20, 201);
+  text-decoration: none;
+  margin-left: 2px;
+}
+.bottom-account-text {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.terms-link {
+  color: rgb(114, 20, 201);
+}
+.input-field-description {
+  margin-bottom: 7px;
+}
+.show-icon {
+  background-image: url("Assets/hide\ password.svg");
+  height: 40%;
+  width: 40px;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.input-field > div {
+  position: relative;
+}
+.image-section {
+  display: none;
+}
+@media (min-width: 992px) {
+  .w-50 {
+    width: 50%;
+  }
+  .image-section {
+    display: block;
+    background: rgb(114, 20, 201);
+  }
+  .signup-img-part {
+    padding-top: 75px;
+    text-align: center;
+  }
+  .signup-img {
+    width: 70%;
+  }
+  .input-field {
+    width: 350px;
+  }
+  .row-wise {
+    display: flex;
+    flex-direction: row;
+  }
+  .signup-text-part {
+    color: white;
+  }
+  .signup-text {
+    width: 80%;
+    margin: 8px auto;
+    text-align: center;
+  }
+  .para {
+    font-size: 0.65rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    font-weight: 300;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .dots-wrapper {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .dots {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background: white;
+    margin: 3px;
+    border-radius: 50%;
+    opacity: 0.5;
+    justify-content: center;
+  }
+
+  .active-dot {
+    opacity: 1;
+  }
+}
