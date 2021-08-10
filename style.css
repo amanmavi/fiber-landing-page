@@ -36,6 +36,9 @@ header,
   border-radius: 5px;
   padding: 10px 100px 10px 100px;
   margin-bottom: 10px;
+  margin-left: 3px;
+  margin-right: 25px;
+  width: 100%;
 }
 .p-color-text {
   color: rgb(114, 20, 201);
@@ -60,6 +63,10 @@ footer {
   font-size: 25px;
   margin-bottom: 0px;
 }
+.ticks {
+  display: flex;
+  flex-direction: row;
+}
 .example-link {
   display: flex;
   justify-content: center;
@@ -70,7 +77,6 @@ footer {
   margin: 60px 30px 50px 30px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 500px;
 }
 .page3-white-heading {
   padding-top: 30px;
@@ -78,23 +84,29 @@ footer {
 }
 .page3-white-para {
   margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 .free-trial-btn2 {
   background: white;
   color: rgb(114, 20, 201);
   border-radius: 5px;
   padding: 10px 70px 10px 70px;
+}
+.page3-text-content {
   margin-left: 20px;
 }
 .page3-img-divv {
-  height: 251px;
-  width: 200px;
-  margin: 20px 40px 0px 40px;
+  text-align: center;
+  margin-top: 50px;
+  height: 100%;
 }
 .page3-img {
-  height: 100%;
-  width: 100%;
+  vertical-align: bottom;
+  height: 250px;
+  width: 90%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .page4-content-box {
   border: solid grey 0.5px;
@@ -144,6 +156,14 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .page1,
+  .page2,
+  .page3,
+  .page4,
+  header {
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
   img[alt="hamburger-icon"] {
     display: none;
   }
@@ -151,5 +171,94 @@ footer {
     display: block;
     width: auto;
     margin-top: 0px;
+  }
+  .rating-star-section {
+    padding-top: 15px;
+    padding-right: 10px;
+  }
+  .rating,
+  .page1-links,
+  .tick-text,
+  .ticks,
+  .page2-content-boxes,
+  .page3,
+  .page4,
+  .footer-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .page1 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+  }
+
+  .ticks {
+    padding-right: 12px;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .page1-text-content {
+    padding-left: 0px;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .free-trial-btn1,
+  .free-trial-btn2 {
+    padding: 10px 15px;
+  }
+  .example-link {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .page2-top-heading {
+    margin-bottom: 6px;
+  }
+  .page2-2nd-heading {
+    margin-top: 0px;
+    width: 60%;
+  }
+  .content-box {
+    padding-right: 8px;
+  }
+  .page3-text-content {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    width: 40%;
+    padding-right: 40px;
+  }
+
+  .page3-img-divv {
+    width: 60%;
+  }
+  .page3-img {
+    height: 400px;
+    margin-top: 15px;
+    object-fit: cover;
+  }
+  .page4-content-box {
+    margin-right: 25px;
+  }
+  .page4-text {
+    height: 120px;
+  }
+  .footer-fiber-part {
+    width: 30%;
+    padding-left: 30px;
+  }
+  .footer-content {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page3-img {
+    width: 90%;
+  }
+  .page3-white-para {
+    width: 70%;
   }
 }
